@@ -1,0 +1,18 @@
+{
+  "mode": "random",
+  "insertion": "after_final_rmsnorm_before_tied_head",
+  "activation": "gelu",
+  "hidden": 3890,
+  "seed": 0,
+  "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+  "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+  "base_total": 1990912,
+  "new_layer_params": 999858,
+  "expanded_total": 2990770,
+  "state_sha256": "5929edb42544999a898b6bf5eb395cb9336f68fea7ae5b2e3939d808d0aedb51",
+  "created": "2026-11-21 19:57:12",
+  "torch_version": "2.14.1+cpu",
+  "dtype": "float32",
+  "bias_policy": "zero",
+  "model_file_sha256": "0cc2d0edead1c31825d7727f4607a54dd8fc31aafee1d57c4cd4936b6af53136"
+}

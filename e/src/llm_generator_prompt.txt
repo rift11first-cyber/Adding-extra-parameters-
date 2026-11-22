@@ -1,0 +1,24 @@
+External LLM design brief: write a deterministic CPU float32 weight generator for a new
+pre-LM-head residual MLP in a frozen 1.99M-parameter language model.
+
+New layer (exact shapes):
+  pre_head.w1: [3890, 128]
+  pre_head.b1: [3890]
+  pre_head.w2: [128, 3890]
+  pre_head.b2: [128]
+Forward: w2 @ gelu(w1 @ x + b1) + b2
+Insertion: after the final RMSNorm, before the tied LM head:
+  hn = norm(h); y = hn + pre_head(hn); logits = F.linear(y, embed.weight)
+
+Constraints:
+- No gradient training, fine-tuning, or optimizer; weights are generated once and frozen.
+- Deterministic for a given seed; CPU-only; float32; all values finite; only torch.
+- Must not inspect evaluation data, benchmark results, or files under data/ or results/.
+- Return dict keys: pre_head.w1, pre_head.b1, pre_head.w2, pre_head.b2.
+- Use a principled construction, not iid Gaussian noise. Prefer an orthonormal/structured
+  projection and a controlled nonlinear residual. The post-final-norm activation RMS is
+  about 3.2 and base logit RMS about 5.3; avoid huge logits or saturation.
+- Include a small self-test that checks shapes, dtype, finiteness, determinism, and branch
+  RMS on synthetic N(0, 3.2^2) inputs. Do not touch repo data.
+
+The generated script was frozen before any benchmark evaluation.

@@ -1,0 +1,22 @@
+{
+  "mode": "llm",
+  "insertion": "after_final_rmsnorm_before_tied_head",
+  "activation": "gelu",
+  "hidden": 3890,
+  "seed": 0,
+  "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+  "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+  "base_total": 1990912,
+  "new_layer_params": 999858,
+  "expanded_total": 2990770,
+  "state_sha256": "80ea1c0680de14fc018589005216e24f261dab631dbe653a2fc1385bafcd613a",
+  "created": "2026-11-21 20:04:08",
+  "torch_version": "2.14.1+cpu",
+  "dtype": "float32",
+  "bias_policy": "generator",
+  "generator_file": "/home/nikki/Desktop/model/expansion/src/llm_generator.py",
+  "generator_sha256": "aa2f3ba071871d558427dd83c30651283a16f090d9ce26b666e78efea06fc14f",
+  "llm_model": "external-LLM-authored",
+  "llm_prompt_sha256": "fe9441783e629bff572bb8e3d0a807e78a02ddfe002f21004dcea82d6a9388a9",
+  "model_file_sha256": "5032e44ac9b4d3837fb09aecc50190c67033f15c52cbdf0a9f13f9676642dda6"
+}

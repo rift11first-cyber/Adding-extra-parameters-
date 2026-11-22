@@ -1,0 +1,279 @@
+{
+  "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+  "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+  "base_total_params": 1990912,
+  "base_state_tensors": 57,
+  "input_shape": [
+    1,
+    18
+  ],
+  "A_logits_shape": [
+    1,
+    18,
+    8192
+  ],
+  "A_logits_finite": true,
+  "random": {
+    "name": "B",
+    "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/random_seed0",
+    "total_params": 2990770,
+    "pre_head_params": 999858,
+    "base_params": 1990912,
+    "base_state": {
+      "identical": true,
+      "bad": [],
+      "extra": [
+        "pre_head.b1",
+        "pre_head.b2",
+        "pre_head.w1",
+        "pre_head.w2"
+      ]
+    },
+    "requires_grad_pre_head": {
+      "pre_head.w1": false,
+      "pre_head.b1": false,
+      "pre_head.w2": false,
+      "pre_head.b2": false
+    },
+    "forward_hook_calls": 1,
+    "cached_hook_calls": 1,
+    "hook_shapes": [
+      {
+        "input": [
+          1,
+          18,
+          128
+        ],
+        "output": [
+          1,
+          18,
+          128
+        ]
+      },
+      {
+        "input": [
+          1,
+          128
+        ],
+        "output": [
+          1,
+          128
+        ]
+      }
+    ],
+    "logits_finite": true,
+    "cached_logits_finite": true,
+    "logits_differs_from_A": 2.8879404067993164,
+    "zero_branch_max_abs_diff_vs_A": 0.0,
+    "zero_branch_allclose": true,
+    "cached_logits_shape": [
+      1,
+      8192
+    ],
+    "state_keys": [
+      "embed.weight",
+      "layers.0.attn.kv_norm.weight",
+      "layers.0.attn.wkv_a.weight",
+      "layers.0.attn.wkv_b.weight",
+      "layers.0.attn.wo.weight",
+      "layers.0.attn.wq.weight",
+      "layers.0.attn_norm.weight",
+      "layers.0.ffn.w1.weight",
+      "layers.0.ffn.w2.weight",
+      "layers.0.ffn.w3.weight",
+      "layers.0.ffn_norm.weight",
+      "layers.1.attn.kv_norm.weight",
+      "layers.1.attn.wkv_a.weight",
+      "layers.1.attn.wkv_b.weight",
+      "layers.1.attn.wo.weight",
+      "layers.1.attn.wq.weight",
+      "layers.1.attn_norm.weight",
+      "layers.1.ffn.experts.w_down",
+      "layers.1.ffn.experts.w_gate",
+      "layers.1.ffn.experts.w_up",
+      "layers.1.ffn.gate.bias",
+      "layers.1.ffn.gate.weight",
+      "layers.1.ffn.shared.w1.weight",
+      "layers.1.ffn.shared.w2.weight",
+      "layers.1.ffn.shared.w3.weight",
+      "layers.1.ffn_norm.weight",
+      "layers.2.attn.kv_norm.weight",
+      "layers.2.attn.wkv_a.weight",
+      "layers.2.attn.wkv_b.weight",
+      "layers.2.attn.wo.weight",
+      "layers.2.attn.wq.weight",
+      "layers.2.attn_norm.weight",
+      "layers.2.ffn.experts.w_down",
+      "layers.2.ffn.experts.w_gate",
+      "layers.2.ffn.experts.w_up",
+      "layers.2.ffn.gate.bias",
+      "layers.2.ffn.gate.weight",
+      "layers.2.ffn.shared.w1.weight",
+      "layers.2.ffn.shared.w2.weight",
+      "layers.2.ffn.shared.w3.weight",
+      "layers.2.ffn_norm.weight",
+      "layers.3.attn.kv_norm.weight",
+      "layers.3.attn.wkv_a.weight",
+      "layers.3.attn.wkv_b.weight",
+      "layers.3.attn.wo.weight",
+      "layers.3.attn.wq.weight",
+      "layers.3.attn_norm.weight",
+      "layers.3.ffn.experts.w_down",
+      "layers.3.ffn.experts.w_gate",
+      "layers.3.ffn.experts.w_up",
+      "layers.3.ffn.gate.bias",
+      "layers.3.ffn.gate.weight",
+      "layers.3.ffn.shared.w1.weight",
+      "layers.3.ffn.shared.w2.weight",
+      "layers.3.ffn.shared.w3.weight",
+      "layers.3.ffn_norm.weight",
+      "norm.weight",
+      "pre_head.b1",
+      "pre_head.b2",
+      "pre_head.w1",
+      "pre_head.w2"
+    ]
+  },
+  "llm": {
+    "name": "C",
+    "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/llm_generated",
+    "total_params": 2990770,
+    "pre_head_params": 999858,
+    "base_params": 1990912,
+    "base_state": {
+      "identical": true,
+      "bad": [],
+      "extra": [
+        "pre_head.b1",
+        "pre_head.b2",
+        "pre_head.w1",
+        "pre_head.w2"
+      ]
+    },
+    "requires_grad_pre_head": {
+      "pre_head.w1": false,
+      "pre_head.b1": false,
+      "pre_head.w2": false,
+      "pre_head.b2": false
+    },
+    "forward_hook_calls": 1,
+    "cached_hook_calls": 1,
+    "hook_shapes": [
+      {
+        "input": [
+          1,
+          18,
+          128
+        ],
+        "output": [
+          1,
+          18,
+          128
+        ]
+      },
+      {
+        "input": [
+          1,
+          128
+        ],
+        "output": [
+          1,
+          128
+        ]
+      }
+    ],
+    "logits_finite": true,
+    "cached_logits_finite": true,
+    "logits_differs_from_A": 1.385904312133789,
+    "zero_branch_max_abs_diff_vs_A": 0.0,
+    "zero_branch_allclose": true,
+    "cached_logits_shape": [
+      1,
+      8192
+    ],
+    "state_keys": [
+      "embed.weight",
+      "layers.0.attn.kv_norm.weight",
+      "layers.0.attn.wkv_a.weight",
+      "layers.0.attn.wkv_b.weight",
+      "layers.0.attn.wo.weight",
+      "layers.0.attn.wq.weight",
+      "layers.0.attn_norm.weight",
+      "layers.0.ffn.w1.weight",
+      "layers.0.ffn.w2.weight",
+      "layers.0.ffn.w3.weight",
+      "layers.0.ffn_norm.weight",
+      "layers.1.attn.kv_norm.weight",
+      "layers.1.attn.wkv_a.weight",
+      "layers.1.attn.wkv_b.weight",
+      "layers.1.attn.wo.weight",
+      "layers.1.attn.wq.weight",
+      "layers.1.attn_norm.weight",
+      "layers.1.ffn.experts.w_down",
+      "layers.1.ffn.experts.w_gate",
+      "layers.1.ffn.experts.w_up",
+      "layers.1.ffn.gate.bias",
+      "layers.1.ffn.gate.weight",
+      "layers.1.ffn.shared.w1.weight",
+      "layers.1.ffn.shared.w2.weight",
+      "layers.1.ffn.shared.w3.weight",
+      "layers.1.ffn_norm.weight",
+      "layers.2.attn.kv_norm.weight",
+      "layers.2.attn.wkv_a.weight",
+      "layers.2.attn.wkv_b.weight",
+      "layers.2.attn.wo.weight",
+      "layers.2.attn.wq.weight",
+      "layers.2.attn_norm.weight",
+      "layers.2.ffn.experts.w_down",
+      "layers.2.ffn.experts.w_gate",
+      "layers.2.ffn.experts.w_up",
+      "layers.2.ffn.gate.bias",
+      "layers.2.ffn.gate.weight",
+      "layers.2.ffn.shared.w1.weight",
+      "layers.2.ffn.shared.w2.weight",
+      "layers.2.ffn.shared.w3.weight",
+      "layers.2.ffn_norm.weight",
+      "layers.3.attn.kv_norm.weight",
+      "layers.3.attn.wkv_a.weight",
+      "layers.3.attn.wkv_b.weight",
+      "layers.3.attn.wo.weight",
+      "layers.3.attn.wq.weight",
+      "layers.3.attn_norm.weight",
+      "layers.3.ffn.experts.w_down",
+      "layers.3.ffn.experts.w_gate",
+      "layers.3.ffn.experts.w_up",
+      "layers.3.ffn.gate.bias",
+      "layers.3.ffn.gate.weight",
+      "layers.3.ffn.shared.w1.weight",
+      "layers.3.ffn.shared.w2.weight",
+      "layers.3.ffn.shared.w3.weight",
+      "layers.3.ffn_norm.weight",
+      "norm.weight",
+      "pre_head.b1",
+      "pre_head.b2",
+      "pre_head.w1",
+      "pre_head.w2"
+    ]
+  },
+  "checks": {
+    "base_hash_matches_known": true,
+    "base_params_1990912": true,
+    "random_total_2990770": true,
+    "llm_total_2990770": true,
+    "random_pre_head_999858": true,
+    "llm_pre_head_999858": true,
+    "random_base_identical": true,
+    "llm_base_identical": true,
+    "random_connected": true,
+    "llm_connected": true,
+    "random_zero_branch_matches_A": true,
+    "llm_zero_branch_matches_A": true,
+    "random_logits_differ": true,
+    "llm_logits_differ": true,
+    "random_finite": true,
+    "llm_finite": true,
+    "random_no_grad": true,
+    "llm_no_grad": true
+  },
+  "all_passed": true
+}

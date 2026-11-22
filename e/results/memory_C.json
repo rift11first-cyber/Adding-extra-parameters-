@@ -1,0 +1,16 @@
+{
+  "kind": "C",
+  "path": "/home/nikki/Desktop/model/expansion/checkpoints/llm_generated",
+  "device": "cpu",
+  "threads": 4,
+  "seq_len": 512,
+  "iters": 10,
+  "param_bytes": 11963080,
+  "param_mib": 11.408882141113281,
+  "state_bytes": 11963176,
+  "state_mib": 11.408973693847656,
+  "baseline_rss_mib": 273.71484375,
+  "peak_rss_mib": 287.8984375,
+  "delta_rss_mib": 14.18359375,
+  "forward_ms": 56.92940279998311
+}

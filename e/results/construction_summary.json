@@ -1,0 +1,683 @@
+{
+  "construction_complete": true,
+  "original": {
+    "path": "/home/nikki/Desktop/model",
+    "model_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+    "config_sha256": "88cd182328d064cfe7a79071f549e7dec342104200462d3204709e089591f3e7",
+    "tokenizer_sha256": "21c5eb73fc70ef9fbda014dae1a3219edfc9fd1e5961bf762517012b932f143a",
+    "total_params": 1990912,
+    "state_tensors": 57,
+    "state_scalars_including_buffers": 1990936
+  },
+  "upstream": {
+    "path": "/home/nikki/Desktop/model/expansion/vendor/littlekedi",
+    "commit": "a282a8fdc945d783e05b25b8dcd42fc493cf8f23"
+  },
+  "new_layer": {
+    "insertion": "after_final_rmsnorm_before_tied_head",
+    "activation": "gelu",
+    "hidden": 3890,
+    "shapes": {
+      "pre_head.w1": [
+        3890,
+        128
+      ],
+      "pre_head.b1": [
+        3890
+      ],
+      "pre_head.w2": [
+        128,
+        3890
+      ],
+      "pre_head.b2": [
+        128
+      ]
+    },
+    "params": 999858,
+    "expanded_total": 2990770
+  },
+  "random_control": {
+    "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/random_seed0",
+    "manifest": {
+      "mode": "random",
+      "insertion": "after_final_rmsnorm_before_tied_head",
+      "activation": "gelu",
+      "hidden": 3890,
+      "seed": 0,
+      "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+      "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+      "base_total": 1990912,
+      "new_layer_params": 999858,
+      "expanded_total": 2990770,
+      "state_sha256": "5929edb42544999a898b6bf5eb395cb9336f68fea7ae5b2e3939d808d0aedb51",
+      "created": "2026-11-21 19:57:12",
+      "torch_version": "2.14.1+cpu",
+      "dtype": "float32",
+      "bias_policy": "zero",
+      "model_file_sha256": "0cc2d0edead1c31825d7727f4607a54dd8fc31aafee1d57c4cd4936b6af53136"
+    },
+    "file_sha256": {
+      "model.safetensors": "0cc2d0edead1c31825d7727f4607a54dd8fc31aafee1d57c4cd4936b6af53136",
+      "config.json": "68cac6a375b8085909f8e8ef7cb528f3ce05dfb68fe0b4d125291a4309a50579",
+      "tokenizer.json": "21c5eb73fc70ef9fbda014dae1a3219edfc9fd1e5961bf762517012b932f143a"
+    },
+    "state_sha256": "5929edb42544999a898b6bf5eb395cb9336f68fea7ae5b2e3939d808d0aedb51",
+    "param_counts": {
+      "total": 2990770,
+      "activated": 2548402,
+      "embedding": 1048576,
+      "activated_non_embedding": 1499826,
+      "fraction_activated": 0.8520889269318603,
+      "pre_head": 999858,
+      "base_total": 1990912
+    },
+    "new_layer_shapes": {
+      "pre_head.w1": [
+        3890,
+        128
+      ],
+      "pre_head.b1": [
+        3890
+      ],
+      "pre_head.w2": [
+        128,
+        3890
+      ],
+      "pre_head.b2": [
+        128
+      ]
+    },
+    "new_layer_stats": {
+      "pre_head.w1": {
+        "shape": [
+          3890,
+          128
+        ],
+        "rms": 0.020020335912704468,
+        "max_abs": 0.09316475689411163
+      },
+      "pre_head.b1": {
+        "shape": [
+          3890
+        ],
+        "rms": 0.0,
+        "max_abs": 0.0
+      },
+      "pre_head.w2": {
+        "shape": [
+          128,
+          3890
+        ],
+        "rms": 0.01997661404311657,
+        "max_abs": 0.09522329270839691
+      },
+      "pre_head.b2": {
+        "shape": [
+          128
+        ],
+        "rms": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    "base_tensors_identical": true,
+    "missing_keys": [],
+    "extra_keys": [
+      "pre_head.b1",
+      "pre_head.b2",
+      "pre_head.w1",
+      "pre_head.w2"
+    ],
+    "requires_grad_any": false,
+    "logits_finite": true,
+    "logits_max_abs_diff_vs_A": 2.8879404067993164,
+    "embedded_metadata": {
+      "torch_version": "2.14.1+cpu",
+      "created": "2026-11-21 19:57:12",
+      "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+      "expanded_total": "2990770",
+      "hidden": "3890",
+      "base_total": "1990912",
+      "insertion": "after_final_rmsnorm_before_tied_head",
+      "bias_policy": "zero",
+      "mode": "random",
+      "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+      "seed": "0",
+      "dtype": "float32",
+      "activation": "gelu",
+      "state_sha256": "5929edb42544999a898b6bf5eb395cb9336f68fea7ae5b2e3939d808d0aedb51",
+      "new_layer_params": "999858"
+    },
+    "checks": {
+      "B_manifest_base_sha": true,
+      "B_manifest_base_total": true,
+      "B_manifest_new_params": true,
+      "B_manifest_expanded_total": true,
+      "B_manifest_insertion": true,
+      "B_manifest_activation": true,
+      "B_manifest_hidden": true,
+      "B_manifest_dtype": true,
+      "B_manifest_seed": true,
+      "B_manifest_state_sha": true,
+      "B_manifest_file_sha": true,
+      "B_embedded_state_sha": true,
+      "B_embedded_mode": true,
+      "B_base_keys_missing": true,
+      "B_extra_keys": true,
+      "B_base_tensors_equal": true,
+      "B_shapes": true,
+      "B_dtype": true,
+      "B_finite": true,
+      "B_base_total": true,
+      "B_total": true,
+      "B_pre_head": true,
+      "B_param_counts": true,
+      "B_no_grad": true,
+      "B_forward_finite": true,
+      "B_differs_from_A": true,
+      "B_config_matches_base": true,
+      "B_tokenizer_matches_base": true
+    }
+  },
+  "llm_generated": {
+    "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/llm_generated",
+    "manifest": {
+      "mode": "llm",
+      "insertion": "after_final_rmsnorm_before_tied_head",
+      "activation": "gelu",
+      "hidden": 3890,
+      "seed": 0,
+      "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+      "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+      "base_total": 1990912,
+      "new_layer_params": 999858,
+      "expanded_total": 2990770,
+      "state_sha256": "80ea1c0680de14fc018589005216e24f261dab631dbe653a2fc1385bafcd613a",
+      "created": "2026-11-21 20:04:08",
+      "torch_version": "2.14.1+cpu",
+      "dtype": "float32",
+      "bias_policy": "generator",
+      "generator_file": "/home/nikki/Desktop/model/expansion/src/llm_generator.py",
+      "generator_sha256": "aa2f3ba071871d558427dd83c30651283a16f090d9ce26b666e78efea06fc14f",
+      "llm_model": "external-LLM-authored",
+      "llm_prompt_sha256": "fe9441783e629bff572bb8e3d0a807e78a02ddfe002f21004dcea82d6a9388a9",
+      "model_file_sha256": "5032e44ac9b4d3837fb09aecc50190c67033f15c52cbdf0a9f13f9676642dda6"
+    },
+    "file_sha256": {
+      "model.safetensors": "5032e44ac9b4d3837fb09aecc50190c67033f15c52cbdf0a9f13f9676642dda6",
+      "config.json": "68cac6a375b8085909f8e8ef7cb528f3ce05dfb68fe0b4d125291a4309a50579",
+      "tokenizer.json": "21c5eb73fc70ef9fbda014dae1a3219edfc9fd1e5961bf762517012b932f143a"
+    },
+    "state_sha256": "80ea1c0680de14fc018589005216e24f261dab631dbe653a2fc1385bafcd613a",
+    "param_counts": {
+      "total": 2990770,
+      "activated": 2548402,
+      "embedding": 1048576,
+      "activated_non_embedding": 1499826,
+      "fraction_activated": 0.8520889269318603,
+      "pre_head": 999858,
+      "base_total": 1990912
+    },
+    "new_layer_shapes": {
+      "pre_head.w1": [
+        3890,
+        128
+      ],
+      "pre_head.b1": [
+        3890
+      ],
+      "pre_head.w2": [
+        128,
+        3890
+      ],
+      "pre_head.b2": [
+        128
+      ]
+    },
+    "new_layer_stats": {
+      "pre_head.w1": {
+        "shape": [
+          3890,
+          128
+        ],
+        "rms": 0.016033384948968887,
+        "max_abs": 0.07370390743017197
+      },
+      "pre_head.b1": {
+        "shape": [
+          3890
+        ],
+        "rms": 0.0,
+        "max_abs": 0.0
+      },
+      "pre_head.w2": {
+        "shape": [
+          128,
+          3890
+        ],
+        "rms": 0.0024050078354775906,
+        "max_abs": 0.011055586859583855
+      },
+      "pre_head.b2": {
+        "shape": [
+          128
+        ],
+        "rms": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    "base_tensors_identical": true,
+    "missing_keys": [],
+    "extra_keys": [
+      "pre_head.b1",
+      "pre_head.b2",
+      "pre_head.w1",
+      "pre_head.w2"
+    ],
+    "requires_grad_any": false,
+    "logits_finite": true,
+    "logits_max_abs_diff_vs_A": 1.385904312133789,
+    "embedded_metadata": {
+      "generator_sha256": "aa2f3ba071871d558427dd83c30651283a16f090d9ce26b666e78efea06fc14f",
+      "hidden": "3890",
+      "insertion": "after_final_rmsnorm_before_tied_head",
+      "activation": "gelu",
+      "base_total": "1990912",
+      "generator_file": "/home/nikki/Desktop/model/expansion/src/llm_generator.py",
+      "seed": "0",
+      "created": "2026-11-21 20:04:08",
+      "dtype": "float32",
+      "llm_prompt_sha256": "fe9441783e629bff572bb8e3d0a807e78a02ddfe002f21004dcea82d6a9388a9",
+      "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+      "state_sha256": "80ea1c0680de14fc018589005216e24f261dab631dbe653a2fc1385bafcd613a",
+      "expanded_total": "2990770",
+      "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+      "llm_model": "external-LLM-authored",
+      "bias_policy": "generator",
+      "new_layer_params": "999858",
+      "mode": "llm",
+      "torch_version": "2.14.1+cpu"
+    },
+    "checks": {
+      "C_manifest_base_sha": true,
+      "C_manifest_base_total": true,
+      "C_manifest_new_params": true,
+      "C_manifest_expanded_total": true,
+      "C_manifest_insertion": true,
+      "C_manifest_activation": true,
+      "C_manifest_hidden": true,
+      "C_manifest_dtype": true,
+      "C_manifest_seed": true,
+      "C_manifest_state_sha": true,
+      "C_manifest_file_sha": true,
+      "C_embedded_state_sha": true,
+      "C_embedded_mode": true,
+      "C_base_keys_missing": true,
+      "C_extra_keys": true,
+      "C_base_tensors_equal": true,
+      "C_shapes": true,
+      "C_dtype": true,
+      "C_finite": true,
+      "C_base_total": true,
+      "C_total": true,
+      "C_pre_head": true,
+      "C_param_counts": true,
+      "C_no_grad": true,
+      "C_forward_finite": true,
+      "C_differs_from_A": true,
+      "C_config_matches_base": true,
+      "C_tokenizer_matches_base": true
+    }
+  },
+  "verification": {
+    "base_checkpoint": "/home/nikki/Desktop/model/model.safetensors",
+    "base_checkpoint_sha256": "e97c3a4c4cf0a1b00119cb350297fa5ae6e81fdead6cf56381a43a6ac9f7e9ce",
+    "base_total_params": 1990912,
+    "base_state_tensors": 57,
+    "input_shape": [
+      1,
+      18
+    ],
+    "A_logits_shape": [
+      1,
+      18,
+      8192
+    ],
+    "A_logits_finite": true,
+    "random": {
+      "name": "B",
+      "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/random_seed0",
+      "total_params": 2990770,
+      "pre_head_params": 999858,
+      "base_params": 1990912,
+      "base_state": {
+        "identical": true,
+        "bad": [],
+        "extra": [
+          "pre_head.b1",
+          "pre_head.b2",
+          "pre_head.w1",
+          "pre_head.w2"
+        ]
+      },
+      "requires_grad_pre_head": {
+        "pre_head.w1": false,
+        "pre_head.b1": false,
+        "pre_head.w2": false,
+        "pre_head.b2": false
+      },
+      "forward_hook_calls": 1,
+      "cached_hook_calls": 1,
+      "hook_shapes": [
+        {
+          "input": [
+            1,
+            18,
+            128
+          ],
+          "output": [
+            1,
+            18,
+            128
+          ]
+        },
+        {
+          "input": [
+            1,
+            128
+          ],
+          "output": [
+            1,
+            128
+          ]
+        }
+      ],
+      "logits_finite": true,
+      "cached_logits_finite": true,
+      "logits_differs_from_A": 2.8879404067993164,
+      "zero_branch_max_abs_diff_vs_A": 0.0,
+      "zero_branch_allclose": true,
+      "cached_logits_shape": [
+        1,
+        8192
+      ],
+      "state_keys": [
+        "embed.weight",
+        "layers.0.attn.kv_norm.weight",
+        "layers.0.attn.wkv_a.weight",
+        "layers.0.attn.wkv_b.weight",
+        "layers.0.attn.wo.weight",
+        "layers.0.attn.wq.weight",
+        "layers.0.attn_norm.weight",
+        "layers.0.ffn.w1.weight",
+        "layers.0.ffn.w2.weight",
+        "layers.0.ffn.w3.weight",
+        "layers.0.ffn_norm.weight",
+        "layers.1.attn.kv_norm.weight",
+        "layers.1.attn.wkv_a.weight",
+        "layers.1.attn.wkv_b.weight",
+        "layers.1.attn.wo.weight",
+        "layers.1.attn.wq.weight",
+        "layers.1.attn_norm.weight",
+        "layers.1.ffn.experts.w_down",
+        "layers.1.ffn.experts.w_gate",
+        "layers.1.ffn.experts.w_up",
+        "layers.1.ffn.gate.bias",
+        "layers.1.ffn.gate.weight",
+        "layers.1.ffn.shared.w1.weight",
+        "layers.1.ffn.shared.w2.weight",
+        "layers.1.ffn.shared.w3.weight",
+        "layers.1.ffn_norm.weight",
+        "layers.2.attn.kv_norm.weight",
+        "layers.2.attn.wkv_a.weight",
+        "layers.2.attn.wkv_b.weight",
+        "layers.2.attn.wo.weight",
+        "layers.2.attn.wq.weight",
+        "layers.2.attn_norm.weight",
+        "layers.2.ffn.experts.w_down",
+        "layers.2.ffn.experts.w_gate",
+        "layers.2.ffn.experts.w_up",
+        "layers.2.ffn.gate.bias",
+        "layers.2.ffn.gate.weight",
+        "layers.2.ffn.shared.w1.weight",
+        "layers.2.ffn.shared.w2.weight",
+        "layers.2.ffn.shared.w3.weight",
+        "layers.2.ffn_norm.weight",
+        "layers.3.attn.kv_norm.weight",
+        "layers.3.attn.wkv_a.weight",
+        "layers.3.attn.wkv_b.weight",
+        "layers.3.attn.wo.weight",
+        "layers.3.attn.wq.weight",
+        "layers.3.attn_norm.weight",
+        "layers.3.ffn.experts.w_down",
+        "layers.3.ffn.experts.w_gate",
+        "layers.3.ffn.experts.w_up",
+        "layers.3.ffn.gate.bias",
+        "layers.3.ffn.gate.weight",
+        "layers.3.ffn.shared.w1.weight",
+        "layers.3.ffn.shared.w2.weight",
+        "layers.3.ffn.shared.w3.weight",
+        "layers.3.ffn_norm.weight",
+        "norm.weight",
+        "pre_head.b1",
+        "pre_head.b2",
+        "pre_head.w1",
+        "pre_head.w2"
+      ]
+    },
+    "llm": {
+      "name": "C",
+      "checkpoint": "/home/nikki/Desktop/model/expansion/checkpoints/llm_generated",
+      "total_params": 2990770,
+      "pre_head_params": 999858,
+      "base_params": 1990912,
+      "base_state": {
+        "identical": true,
+        "bad": [],
+        "extra": [
+          "pre_head.b1",
+          "pre_head.b2",
+          "pre_head.w1",
+          "pre_head.w2"
+        ]
+      },
+      "requires_grad_pre_head": {
+        "pre_head.w1": false,
+        "pre_head.b1": false,
+        "pre_head.w2": false,
+        "pre_head.b2": false
+      },
+      "forward_hook_calls": 1,
+      "cached_hook_calls": 1,
+      "hook_shapes": [
+        {
+          "input": [
+            1,
+            18,
+            128
+          ],
+          "output": [
+            1,
+            18,
+            128
+          ]
+        },
+        {
+          "input": [
+            1,
+            128
+          ],
+          "output": [
+            1,
+            128
+          ]
+        }
+      ],
+      "logits_finite": true,
+      "cached_logits_finite": true,
+      "logits_differs_from_A": 1.385904312133789,
+      "zero_branch_max_abs_diff_vs_A": 0.0,
+      "zero_branch_allclose": true,
+      "cached_logits_shape": [
+        1,
+        8192
+      ],
+      "state_keys": [
+        "embed.weight",
+        "layers.0.attn.kv_norm.weight",
+        "layers.0.attn.wkv_a.weight",
+        "layers.0.attn.wkv_b.weight",
+        "layers.0.attn.wo.weight",
+        "layers.0.attn.wq.weight",
+        "layers.0.attn_norm.weight",
+        "layers.0.ffn.w1.weight",
+        "layers.0.ffn.w2.weight",
+        "layers.0.ffn.w3.weight",
+        "layers.0.ffn_norm.weight",
+        "layers.1.attn.kv_norm.weight",
+        "layers.1.attn.wkv_a.weight",
+        "layers.1.attn.wkv_b.weight",
+        "layers.1.attn.wo.weight",
+        "layers.1.attn.wq.weight",
+        "layers.1.attn_norm.weight",
+        "layers.1.ffn.experts.w_down",
+        "layers.1.ffn.experts.w_gate",
+        "layers.1.ffn.experts.w_up",
+        "layers.1.ffn.gate.bias",
+        "layers.1.ffn.gate.weight",
+        "layers.1.ffn.shared.w1.weight",
+        "layers.1.ffn.shared.w2.weight",
+        "layers.1.ffn.shared.w3.weight",
+        "layers.1.ffn_norm.weight",
+        "layers.2.attn.kv_norm.weight",
+        "layers.2.attn.wkv_a.weight",
+        "layers.2.attn.wkv_b.weight",
+        "layers.2.attn.wo.weight",
+        "layers.2.attn.wq.weight",
+        "layers.2.attn_norm.weight",
+        "layers.2.ffn.experts.w_down",
+        "layers.2.ffn.experts.w_gate",
+        "layers.2.ffn.experts.w_up",
+        "layers.2.ffn.gate.bias",
+        "layers.2.ffn.gate.weight",
+        "layers.2.ffn.shared.w1.weight",
+        "layers.2.ffn.shared.w2.weight",
+        "layers.2.ffn.shared.w3.weight",
+        "layers.2.ffn_norm.weight",
+        "layers.3.attn.kv_norm.weight",
+        "layers.3.attn.wkv_a.weight",
+        "layers.3.attn.wkv_b.weight",
+        "layers.3.attn.wo.weight",
+        "layers.3.attn.wq.weight",
+        "layers.3.attn_norm.weight",
+        "layers.3.ffn.experts.w_down",
+        "layers.3.ffn.experts.w_gate",
+        "layers.3.ffn.experts.w_up",
+        "layers.3.ffn.gate.bias",
+        "layers.3.ffn.gate.weight",
+        "layers.3.ffn.shared.w1.weight",
+        "layers.3.ffn.shared.w2.weight",
+        "layers.3.ffn.shared.w3.weight",
+        "layers.3.ffn_norm.weight",
+        "norm.weight",
+        "pre_head.b1",
+        "pre_head.b2",
+        "pre_head.w1",
+        "pre_head.w2"
+      ]
+    },
+    "checks": {
+      "base_hash_matches_known": true,
+      "base_params_1990912": true,
+      "random_total_2990770": true,
+      "llm_total_2990770": true,
+      "random_pre_head_999858": true,
+      "llm_pre_head_999858": true,
+      "random_base_identical": true,
+      "llm_base_identical": true,
+      "random_connected": true,
+      "llm_connected": true,
+      "random_zero_branch_matches_A": true,
+      "llm_zero_branch_matches_A": true,
+      "random_logits_differ": true,
+      "llm_logits_differ": true,
+      "random_finite": true,
+      "llm_finite": true,
+      "random_no_grad": true,
+      "llm_no_grad": true
+    },
+    "all_passed": true
+  },
+  "checks": {
+    "original_hash_matches_known": true,
+    "original_params_1990912": true,
+    "verification_all_passed": true,
+    "verification_base_hash": true,
+    "B_bias_zero": true,
+    "B_reproducible_seed0": true,
+    "C_bias_zero": true,
+    "C_generator_keys": true,
+    "C_generator_reproduces_weights": true,
+    "C_generator_sha_matches_manifest": true,
+    "C_prompt_sha_matches_manifest": true,
+    "C_generator_file_exists": true,
+    "C_prompt_file_exists": true,
+    "upstream_commit_pinned": true,
+    "B_manifest_base_sha": true,
+    "B_manifest_base_total": true,
+    "B_manifest_new_params": true,
+    "B_manifest_expanded_total": true,
+    "B_manifest_insertion": true,
+    "B_manifest_activation": true,
+    "B_manifest_hidden": true,
+    "B_manifest_dtype": true,
+    "B_manifest_seed": true,
+    "B_manifest_state_sha": true,
+    "B_manifest_file_sha": true,
+    "B_embedded_state_sha": true,
+    "B_embedded_mode": true,
+    "B_base_keys_missing": true,
+    "B_extra_keys": true,
+    "B_base_tensors_equal": true,
+    "B_shapes": true,
+    "B_dtype": true,
+    "B_finite": true,
+    "B_base_total": true,
+    "B_total": true,
+    "B_pre_head": true,
+    "B_param_counts": true,
+    "B_no_grad": true,
+    "B_forward_finite": true,
+    "B_differs_from_A": true,
+    "B_config_matches_base": true,
+    "B_tokenizer_matches_base": true,
+    "C_manifest_base_sha": true,
+    "C_manifest_base_total": true,
+    "C_manifest_new_params": true,
+    "C_manifest_expanded_total": true,
+    "C_manifest_insertion": true,
+    "C_manifest_activation": true,
+    "C_manifest_hidden": true,
+    "C_manifest_dtype": true,
+    "C_manifest_seed": true,
+    "C_manifest_state_sha": true,
+    "C_manifest_file_sha": true,
+    "C_embedded_state_sha": true,
+    "C_embedded_mode": true,
+    "C_base_keys_missing": true,
+    "C_extra_keys": true,
+    "C_base_tensors_equal": true,
+    "C_shapes": true,
+    "C_dtype": true,
+    "C_finite": true,
+    "C_base_total": true,
+    "C_total": true,
+    "C_pre_head": true,
+    "C_param_counts": true,
+    "C_no_grad": true,
+    "C_forward_finite": true,
+    "C_differs_from_A": true,
+    "C_config_matches_base": true,
+    "C_tokenizer_matches_base": true
+  },
+  "all_passed": true
+}

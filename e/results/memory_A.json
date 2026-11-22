@@ -1,0 +1,16 @@
+{
+  "kind": "A",
+  "path": "/home/nikki/Desktop/model",
+  "device": "cpu",
+  "threads": 4,
+  "seq_len": 512,
+  "iters": 10,
+  "param_bytes": 7963648,
+  "param_mib": 7.5947265625,
+  "state_bytes": 7963744,
+  "state_mib": 7.594818115234375,
+  "baseline_rss_mib": 261.2578125,
+  "peak_rss_mib": 275.4296875,
+  "delta_rss_mib": 14.171875,
+  "forward_ms": 47.97120340000447
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "B",
+  "path": "/home/nikki/Desktop/model/expansion/checkpoints/random_seed0",
+  "device": "cpu",
+  "threads": 4,
+  "seq_len": 512,
+  "iters": 10,
+  "param_bytes": 11963080,
+  "param_mib": 11.408882141113281,
+  "state_bytes": 11963176,
+  "state_mib": 11.408973693847656,
+  "baseline_rss_mib": 273.93359375,
+  "peak_rss_mib": 305.375,
+  "delta_rss_mib": 31.44140625,
+  "forward_ms": 60.5161485999929
+}
